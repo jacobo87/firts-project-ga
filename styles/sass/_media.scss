@@ -1,0 +1,33 @@
+@media only screen and (max-width: 900px) and (min-width: 360px) {
+  header {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  footer {
+    .contact2 {
+      width: 33%;
+      font-size: 12px;
+      ul {
+        padding: 0;
+      }
+    }
+
+    .contact3 {
+      textarea {
+        width: 100%;
+      }
+    }
+  }
+}
