@@ -341,13 +341,22 @@ template {
   box-sizing: border-box;
 }
 
-body {
+html {
   font-size: 100%;
+  font-family: sans-serif;
+}
+
+/* body {
+  padding: 1.25rem;
+} */
+picture {
+  display: block;
 }
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 header {
@@ -488,6 +497,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   max-height: 17vh;
+  margin-top: 1%;
 }
 footer a {
   text-decoration: none;
@@ -513,6 +523,9 @@ footer .contact form > * {
 }
 footer .contact2 {
   text-align: left;
+}
+footer .contact2 ul {
+  padding: 1%;
 }
 footer .contact3 ul {
   display: flex;
@@ -604,13 +617,13 @@ footer .socialIcons ul li i {
 .main {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
 }
 .main h2 {
   text-align: center;
 }
 .main section {
-  height: 25vh;
+  padding: 1.25rem;
 }
 
 /* Botones */

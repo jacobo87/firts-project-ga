@@ -7,14 +7,14 @@
 .main {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
 
   h2 {
     text-align: center;
   }
 
   section {
-    height: 25vh;
+    padding: 1.25rem;
   }
 }
 

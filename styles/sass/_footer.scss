@@ -2,6 +2,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   max-height: 17vh;
+  margin-top: 1%;
 
   a {
     text-decoration: none;
@@ -33,6 +34,10 @@ footer {
 
   .contact2 {
     text-align: left;
+
+    ul {
+      padding: 1%;
+    }
   }
 
   .contact3 {

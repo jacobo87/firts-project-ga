@@ -2,11 +2,21 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   font-size: 100%;
+  font-family: sans-serif;
+}
+
+/* body {
+  padding: 1.25rem;
+} */
+
+picture {
+  display: block;
 }
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
