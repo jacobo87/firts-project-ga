@@ -1,8 +1,6 @@
 footer {
   display: flex;
-  justify-content: flex-start;
-  max-height: 17vh;
-  margin-top: 1%;
+  flex-wrap: wrap;
 
   a {
     text-decoration: none;
@@ -18,9 +16,7 @@ footer {
   }
 
   .contact {
-    width: 37%;
-    display: block;
-    margin: 0 auto;
+    flex: 1 1 150px;
 
     ul > * {
       margin: 1%;

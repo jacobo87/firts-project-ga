@@ -19,11 +19,12 @@
   <header>
     <h1>Proyecto GA | HTML&CSS</h1>
     <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#Contenido">Contenido</a></li>
-        <li><a href="#About">Sobre nosotros</a></li>
-        <li><a href="#Contacto">Contacto</a></li>
+      <ul class="menu">
+        <li class="item"><a href="#">Inicio</a></li>
+        <li class="item"><a href="#Contenido">Contenido</a></li>
+        <li class="item"><a href="#About">Sobre nosotros</a></li>
+        <li class="item"><a href="#Contacto">Contacto</a></li>
+        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
       </ul>
     </nav>
   </header>
@@ -96,9 +97,9 @@
           <div>
             <h3>Comentarios</h3>
           </div>
-          <form action="https://formspree.io/f/xnqwgrea" method="post">
+          <form action="https://formspree.io/f/xnqwgrea" method="post" id:="email">
             <div class="email">
-              <label for="https://formspree.io/f/xnqwgrea"></label>
+              <label for="email"></label>
               <input placeholder="Email" type="text" class="input" required="" />
             </div>
             <div>
@@ -128,6 +129,7 @@
       2022.
     </p>
   </div>
+<script src="./assets/main.js"></script>
 </body>
 
 </html>

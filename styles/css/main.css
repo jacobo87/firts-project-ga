@@ -495,9 +495,7 @@ header nav ul li a:hover::before {
 
 footer {
   display: flex;
-  justify-content: flex-start;
-  max-height: 17vh;
-  margin-top: 1%;
+  flex-wrap: wrap;
 }
 footer a {
   text-decoration: none;
@@ -510,9 +508,7 @@ footer ul li {
   list-style: none;
 }
 footer .contact {
-  width: 37%;
-  display: block;
-  margin: 0 auto;
+  flex: 1 1 150px;
 }
 footer .contact ul > * {
   margin: 1%;
@@ -592,15 +588,46 @@ footer .socialIcons ul li i {
   header {
     display: flex;
     flex-direction: column;
+    /* menu */
   }
   header h1 {
     width: 100%;
     margin: 0 auto;
   }
-  header nav {
+  header .menu {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .button.secondary {
+    border-bottom: 1px #444 solid;
+  }
+  header .item.button {
+    order: 2;
+  }
+  header .item {
     width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+  }
+  header .item.active {
+    display: block;
+  }
+  header .menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+  }
+  header .toggle {
+    order: 1;
+  }
+  header .toggle a {
+    font-size: 20px;
+  }
+  header .toggle {
+    order: 1;
   }
 
   footer .contact2 {
