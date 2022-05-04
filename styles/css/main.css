@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -447,6 +448,13 @@ header h1:hover::after {
     transform: translate(0);
   }
 }
+header .respmenu {
+  display: flex;
+  width: 100%;
+}
+header .checkbox {
+  visibility: none;
+}
 header nav {
   width: 70%;
   margin-top: 1%;
@@ -584,50 +592,72 @@ footer .socialIcons ul li i {
   margin: 2%;
 }
 
-@media only screen and (max-width: 900px) and (min-width: 360px) {
+/* Desktop */
+/* @media only screen and (min-width: 901) {
+} */
+/* Tablet y Móvil */
+@media only screen and (min-width: 321px) and (max-width: 900) {
   header {
     display: flex;
     flex-direction: column;
-    /* menu */
   }
   header h1 {
     width: 100%;
     margin: 0 auto;
   }
-  header .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  header .respmenu a {
+    color: #212121;
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    z-index: 1;
+    font-weight: 1000;
+    font-size: 15px;
+    max-width: 200px;
+    background: #e8e8e8;
+    font-variant: small-caps;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
   }
-  header .button.secondary {
-    border-bottom: 1px #444 solid;
+  header .respmenu input[type=checkbox],
+header .respmenu .fa-bars,
+header .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
   }
-  header .item.button {
-    order: 2;
+  header .respmenu .fa-bars,
+header .respmenu .fa-times {
+    font-size: 48px;
+    pointer-events: none;
   }
-  header .item {
-    width: 100%;
-    text-align: center;
-    order: 3;
+  header .respmenu input[type=checkbox] {
+    opacity: 0;
+  }
+  header .respmenu {
+    position: relative;
+    min-height: 48px;
+  }
+  header .respmenu nav {
     display: none;
   }
-  header .item.active {
+  header .respmenu input:checked ~ nav {
     display: block;
   }
-  header .menu li {
-    font-size: 16px;
-    padding: 15px 5px;
-    white-space: nowrap;
+  header .respmenu input:checked ~ .fa-bars {
+    display: none;
   }
-  header .toggle {
-    order: 1;
-  }
-  header .toggle a {
-    font-size: 20px;
-  }
-  header .toggle {
-    order: 1;
+  header .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
   }
 
   footer .contact2 {
