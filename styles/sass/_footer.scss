@@ -1,6 +1,21 @@
 footer {
   display: flex;
   flex-wrap: wrap;
+  background-image: url(../../assets/images/footer-background.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .tittle {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 900;
+    }
+  }
 
   a {
     text-decoration: none;

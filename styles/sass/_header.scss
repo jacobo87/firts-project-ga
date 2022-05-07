@@ -1,8 +1,13 @@
+:root {
+  --HeaderBg: #ff013c;
+  --menuBg: #000000;
+}
+
 header {
   display: flex;
 
   h1 {
-    width: 30%;
+    width: 100%;
     text-align: center;
   }
 
@@ -10,7 +15,7 @@ header {
   h1::after {
     padding: 16px 20px;
     font-size: 18px;
-    background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+    background: linear-gradient(45deg, transparent 5%, var(--HeaderBg) 5%);
     border: 0;
     color: #fff;
     letter-spacing: 3px;
@@ -107,19 +112,98 @@ header {
     }
   }
 
-  .respmenu {
+  /* MENU */
+
+  nav {
+    width: 100%;
+    margin-top: 1%;
+  }
+
+  .top-nav {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--menuBg);
+    height: 50px;
+    padding: 1em;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     width: 100%;
   }
 
-  .checkbox {
-    visibility: none;
+  .menu a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
   }
 
-  nav {
-    width: 70%;
-    margin-top: 1%;
+  .menu a:hover {
+    color: white;
   }
+
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: var(--menuBg);
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: var(--menuBg);
+  }
+
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+
+  /*   FIN  */
 
   ul li {
     list-style: none;

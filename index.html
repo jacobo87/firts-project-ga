@@ -17,28 +17,21 @@
 
 <body>
   <header>
-    <h1>Proyecto GA | HTML&CSS</h1>
-    <div class="respmenu">
-  <input type="checkbox">
-  <i class="fas fa-bars"></i>
-  <i class="fas fa-times"></i>
-  <nav>
-    <ul>
-        <li class="item"><a href="#">Inicio</a></li>
-        <li class="item"><a href="#Contenido">Contenido</a></li>
-        <li class="item"><a href="#About">Sobre nosotros</a></li>
-        <li class="item"><a href="#Contacto">Contacto</a></li>
-    </ul>
-  </nav>
-</div>
-<!--     <nav>
-      <ul>
-        <li class="item"><a href="#">Inicio</a></li>
-        <li class="item"><a href="#Contenido">Contenido</a></li>
-        <li class="item"><a href="#About">Sobre nosotros</a></li>
-        <li class="item"><a href="#Contacto">Contacto</a></li>
+    <section class="top-nav">
+      <div>
+        <h1>Proyecto GA | HTML&CSS</h1>
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li class="button"><a href="#">Inicio</a></li>
+        <li class="button"><a href="#Contenido">Contenido</a></li>
+        <li class="button"><a href="#About">Sobre nosotros</a></li>
+        <li class="button"><a href="#Contacto">Contacto</a></li>
       </ul>
-    </nav> -->
+    </section>
   </header>
   <div class="main">
     <section>
@@ -55,6 +48,9 @@
         aperiam laudantium dolorum quidem animi dolor? Quam doloremque beatae
         nihil architecto nesciunt.
       </p>
+      <picture>
+        <img src="#" alt="imagen">
+      </picture>
     </section>
     <section id="Contenido">
       <h2>Esto es una seccion</h2>
@@ -73,55 +69,70 @@
     </section>
     <section id="About">
       <h2>Sobre nosotros</h2>
+      <div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
         beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
         expedita similique hic ullam quisquam, reprehenderit natus doloremque
         ratione nam porro error. Qui.
       </p>
+      <picture>
+        <img src="./assets/images/real.jpg" alt="Ideas">
+      </picture>
+     </div>
+     <div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
         autem, harum quisquam reiciendis numquam unde consequatur adipisci qui
         aperiam laudantium dolorum quidem animi dolor? Quam doloremque beatae
         nihil architecto nesciunt.
       </p>
+      <picture>
+        <img src="./assets/images/US.jpg" alt="Nosotros">
+      </picture>
+      </div>
     </section>
   </div>
   <footer id="Contacto">
-    <div class="contact contact2">
-      <ul>
-        <li>
-          <i class="fa-solid fa-envelope"></i>
-          <a href="mailto:contact@contact.com">contact@contact.com</a>
-        </li>
-        <li>
-          <i class="fa-solid fa-square-phone"></i> Teléfono: +34 666 666 666
-        </li>
-        <li>
-          <i class="fa-solid fa-location-dot"></i>
-          <a href="https://en.wikipedia.org/wiki/Ja%C3%A9n,_Spain">Jaén</a>
-        </li>
-      </ul>
+    <div class="contact tittle">
+      <h2>Contacto</h2>
+      <div class="contact contact2">
+        <ul>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:contact@contact.com">contact@contact.com</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-square-phone"></i> Teléfono: +34 666 666 666
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <a href="https://en.wikipedia.org/wiki/Ja%C3%A9n,_Spain">Jaén</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="contact contact3">
       <ul>
         <li>
           <div>
-            <h3>Comentarios</h3>
+            <div>
+              <legend>Comentarios</legend>
+            </div>
+            <form action="https://formspree.io/f/xnqwgrea" method="post" id:="email">
+              <div class="email">
+                <label for="email"></label>
+                <input placeholder="Email" type="text" class="input" required="" />
+              </div>
+              <div>
+                <textarea name="comment" id="comment" cols="25" rows="2" placeholder="Escriba aquí su comentario... "
+                  class="input"></textarea>
+              </div>
+              <div>
+                <button type="submit" class="button">Enviar</button>
+              </div>
+            </form>
           </div>
-          <form action="https://formspree.io/f/xnqwgrea" method="post" id:="email">
-            <div class="email">
-              <label for="email"></label>
-              <input placeholder="Email" type="text" class="input" required="" />
-            </div>
-            <div>
-              <textarea name="comment" id="comment" cols="25" rows="2" placeholder="Escriba aquí su comentario... "
-                class="input"></textarea>
-            </div>
-            <div>
-              <button type="submit">Enviar</button>
-            </div>
-          </form>
         </li>
       </ul>
     </div>
@@ -141,7 +152,7 @@
       2022.
     </p>
   </div>
-<script src="./scripts/index.js" type="module"></script>
+  <script src="./scripts/index.js" type="module"></script>
 </body>
 
 </html>

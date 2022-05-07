@@ -3,7 +3,7 @@
 } */
 
 /* Tablet y Móvil */
-@media only screen and (min-width: 321px) and (max-width: 900) {
+@media only screen and (min-width: 321px) and (max-width: 900px) {
   header {
     display: flex;
     flex-direction: column;
@@ -13,67 +13,43 @@
       margin: 0 auto;
     }
 
-    .respmenu a {
-      color: #212121;
-      text-decoration: none;
-      display: block;
-      padding: 15px 25px;
-      border: unset;
-      border-radius: 15px;
-      z-index: 1;
-      font-weight: 1000;
-      font-size: 15px;
-      max-width: 200px;
-      background: #e8e8e8;
-      font-variant: small-caps;
-      -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-      box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-      transition: all 250ms;
-      overflow: hidden;
+    .menu-button-container {
+      display: flex;
     }
-
-    .respmenu input[type='checkbox'],
-    .respmenu .fa-bars,
-    .respmenu .fa-times {
+    .menu {
       position: absolute;
-      box-sizing: border-box;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
       margin: 0;
       padding: 0;
-      right: 0;
-      top: 0;
-      width: 48px;
-      height: 48px;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
-
-    .respmenu .fa-bars,
-    .respmenu .fa-times {
-      font-size: 48px;
-      pointer-events: none;
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
-
-    .respmenu input[type='checkbox'] {
-      opacity: 0;
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: rgb(223, 223, 223);
     }
-
-    .respmenu {
-      position: relative;
-      min-height: 48px;
-    }
-
-    .respmenu nav {
-      display: none;
-    }
-
-    .respmenu input:checked ~ nav {
-      display: block;
-    }
-
-    .respmenu input:checked ~ .fa-bars {
-      display: none;
-    }
-
-    .respmenu input:not(:checked) ~ .fa-times {
-      display: none;
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
     }
   }
 

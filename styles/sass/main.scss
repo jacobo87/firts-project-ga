@@ -4,6 +4,11 @@
 @import './footer';
 @import './media';
 
+:root {
+  --HeaderBg: #ff013c;
+  --menuBg: #757272;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -16,11 +21,20 @@
   section {
     padding: 1.25rem;
   }
+
+  #About {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #About picture img {
+    width: 100%;
+  }
 }
 
 /* Botones */
 
-button {
+.button {
   padding: 15px 25px;
   border: unset;
   border-radius: 15px;
@@ -36,7 +50,7 @@ button {
   overflow: hidden;
 }
 
-button::before {
+.button::before {
   content: '';
   position: absolute;
   top: 0;
@@ -51,11 +65,11 @@ button::before {
   transition: all 250ms;
 }
 
-button:hover {
+.button:hover {
   color: #e8e8e8;
 }
 
-button:hover::before {
+.button:hover::before {
   width: 100%;
 }
 

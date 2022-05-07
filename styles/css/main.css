@@ -360,18 +360,25 @@ img {
   height: auto;
 }
 
+:root {
+  --HeaderBg: #ff013c;
+  --menuBg: #000000;
+}
+
 header {
   display: flex;
+  /* MENU */
+  /*   FIN  */
 }
 header h1 {
-  width: 30%;
+  width: 100%;
   text-align: center;
 }
 header h1,
 header h1::after {
   padding: 16px 20px;
   font-size: 18px;
-  background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+  background: linear-gradient(45deg, transparent 5%, var(--HeaderBg) 5%);
   border: 0;
   color: #fff;
   letter-spacing: 3px;
@@ -448,16 +455,80 @@ header h1:hover::after {
     transform: translate(0);
   }
 }
-header .respmenu {
+header nav {
+  width: 100%;
+  margin-top: 1%;
+}
+header .top-nav {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--menuBg);
+  height: 50px;
+  padding: 1em;
+}
+header .menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
-header .checkbox {
-  visibility: none;
+header .menu a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
 }
-header nav {
-  width: 70%;
-  margin-top: 1%;
+header .menu a:hover {
+  color: white;
+}
+header .menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+header .menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header #menu-toggle {
+  display: none;
+}
+header .menu-button,
+header .menu-button::before,
+header .menu-button::after {
+  display: block;
+  background-color: var(--menuBg);
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+header .menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+header .menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+header #menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+header #menu-toggle:checked + .menu-button-container .menu-button {
+  background: var(--menuBg);
+}
+header #menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
 }
 header ul li {
   list-style: none;
@@ -504,6 +575,19 @@ header nav ul li a:hover::before {
 footer {
   display: flex;
   flex-wrap: wrap;
+  background-image: url(../../assets/images/footer-background.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+footer .tittle {
+  display: flex;
+  flex-direction: column;
+}
+footer .tittle h2 {
+  font-size: 2rem;
+  font-weight: 900;
 }
 footer a {
   text-decoration: none;
@@ -596,7 +680,7 @@ footer .socialIcons ul li i {
 /* @media only screen and (min-width: 901) {
 } */
 /* Tablet y Móvil */
-@media only screen and (min-width: 321px) and (max-width: 900) {
+@media only screen and (min-width: 321px) and (max-width: 900px) {
   header {
     display: flex;
     flex-direction: column;
@@ -605,59 +689,43 @@ footer .socialIcons ul li i {
     width: 100%;
     margin: 0 auto;
   }
-  header .respmenu a {
-    color: #212121;
-    text-decoration: none;
-    display: block;
-    padding: 15px 25px;
-    border: unset;
-    border-radius: 15px;
-    z-index: 1;
-    font-weight: 1000;
-    font-size: 15px;
-    max-width: 200px;
-    background: #e8e8e8;
-    font-variant: small-caps;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    transition: all 250ms;
-    overflow: hidden;
+  header .menu-button-container {
+    display: flex;
   }
-  header .respmenu input[type=checkbox],
-header .respmenu .fa-bars,
-header .respmenu .fa-times {
+  header .menu {
     position: absolute;
-    box-sizing: border-box;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  header #menu-toggle ~ .menu li {
+    height: 0;
     margin: 0;
     padding: 0;
-    right: 0;
-    top: 0;
-    width: 48px;
-    height: 48px;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  header .respmenu .fa-bars,
-header .respmenu .fa-times {
-    font-size: 48px;
-    pointer-events: none;
+  header #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  header .respmenu input[type=checkbox] {
-    opacity: 0;
+  header .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: rgb(223, 223, 223);
   }
-  header .respmenu {
-    position: relative;
-    min-height: 48px;
-  }
-  header .respmenu nav {
-    display: none;
-  }
-  header .respmenu input:checked ~ nav {
-    display: block;
-  }
-  header .respmenu input:checked ~ .fa-bars {
-    display: none;
-  }
-  header .respmenu input:not(:checked) ~ .fa-times {
-    display: none;
+  header .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
   }
 
   footer .contact2 {
@@ -671,6 +739,11 @@ header .respmenu .fa-times {
     width: 100%;
   }
 }
+:root {
+  --HeaderBg: #ff013c;
+  --menuBg: #757272;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -682,9 +755,16 @@ header .respmenu .fa-times {
 .main section {
   padding: 1.25rem;
 }
+.main #About {
+  display: flex;
+  flex-direction: column;
+}
+.main #About picture img {
+  width: 100%;
+}
 
 /* Botones */
-button {
+.button {
   padding: 15px 25px;
   border: unset;
   border-radius: 15px;
@@ -700,7 +780,7 @@ button {
   overflow: hidden;
 }
 
-button::before {
+.button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -715,11 +795,11 @@ button::before {
   transition: all 250ms;
 }
 
-button:hover {
+.button:hover {
   color: #e8e8e8;
 }
 
-button:hover::before {
+.button:hover::before {
   width: 100%;
 }
 
