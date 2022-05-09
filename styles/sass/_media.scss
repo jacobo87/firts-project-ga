@@ -53,19 +53,35 @@
     }
   }
 
-  footer {
-    .contact2 {
-      width: 33%;
-      font-size: 12px;
-      ul {
-        padding: 0;
-      }
+  main {
+    picture img {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
-    .contact3 {
-      textarea {
-        width: 100%;
-      }
+    .about-item1 p {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+footer {
+  .contact2 {
+    width: 100%;
+    font-size: 12px;
+    ul {
+      padding: 0;
+    }
+  }
+
+  .contact3 {
+    textarea {
+      width: 100%;
     }
   }
 }

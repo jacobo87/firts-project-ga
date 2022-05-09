@@ -728,17 +728,30 @@ footer .socialIcons ul li i {
     border-bottom: 1px solid #444;
   }
 
-  footer .contact2 {
-    width: 33%;
-    font-size: 12px;
-  }
-  footer .contact2 ul {
-    padding: 0;
-  }
-  footer .contact3 textarea {
+  main picture img {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .about-item1 p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
+footer .contact2 {
+  width: 100%;
+  font-size: 12px;
+}
+footer .contact2 ul {
+  padding: 0;
+}
+footer .contact3 textarea {
+  width: 100%;
+}
+
 :root {
   --HeaderBg: #ff013c;
   --menuBg: #757272;
@@ -760,7 +773,41 @@ footer .socialIcons ul li i {
   flex-direction: column;
 }
 .main #About picture img {
+  width: 60%;
+}
+.main .about-item1 {
+  display: flex;
+  flex-direction: row;
   width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.main .about-item1 picture {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.main .about-item1 picture img {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.main .about-item2 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.main .about-item2 picture {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.main .about-item2 picture img {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 /* Botones */

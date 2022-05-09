@@ -28,7 +28,47 @@
   }
 
   #About picture img {
+    width: 60%;
+  }
+
+  .about-item1 {
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .about-item1 picture {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .about-item1 picture img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .about-item2 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .about-item2 picture {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .about-item2 picture img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
