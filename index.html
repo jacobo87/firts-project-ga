@@ -27,8 +27,8 @@
         <div class='menu-button'></div>
       </label>
       <ul class="menu">
-        <li class="button"><a href="#">Inicio</a></li>
         <li class="button"><a href="#Contenido">Cartelera</a></li>
+        <li class="button"><a href="#Comprar">Comprar</a></li>
         <li class="button"><a href="#About">Sobre nosotros</a></li>
         <li class="button"><a href="#Contacto">Contacto</a></li>
       </ul>
@@ -36,72 +36,84 @@
   </header>
   <div class="main">
     <section class="cartelera" id="Contenido">
-      <div class="item-carte">
+      <div>
         <h2>Cartelera</h2>
-        <picture>
-          <img src="https://www.cinesa.es/Manager/Peliculas/elhombredelnorte/cartelera.jpg" alt="el hombre del norte">
-        </picture>
-        <h3>Sinopsis</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
-        </p>
-        <hr>
-        <picture>
-          <img src="https://www.cinesa.es/Manager/Peliculas/dogunviajesalvaje/cartelera.jpg" alt="dog un viaje salvaje">
-        </picture>
-        <h3>Sinopsis</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          autem, harum quisquam reiciendis numquam unde consequatur adipisci qui
-          aperiam laudantium dolorum quidem animi dolor? Quam doloremque beatae
-          nihil architecto nesciunt.
-        </p>
-        <hr>
-        <picture>
-          <img src="https://www.cinesa.es/Manager/Peliculas/doctorstrangeenelmultiversodelalocura/cartelera.jpg"
-            alt="doctor strange en el multiverso de la locura">
-        </picture>
-        <h3>Sinopsis</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
-        </p>
-        <hr>
-        <picture>
-          <img src="https://www.cinesa.es/Manager/Peliculas/jurassicworlddominion/cartelera.jpg"
-            alt="jurassic world dominion">
-        </picture>
-        <h3>Sinopsis</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          autem, harum quisquam reiciendis numquam unde consequatur adipisci qui
-          aperiam laudantium dolorum quidem animi dolor? Quam doloremque beatae
-          nihil architecto nesciunt.
-        </p>
-        <hr>
-        <div class="container">
-          <div class="row">
-            <!-- Elementos generados a partir del JSON -->
-            <main id="items" class="col-sm-8 row"></main>
-            <!-- Carrito -->
-            <aside class="col-sm-4">
-              <h2>Carrito</h2>
-              <!-- Elementos del carrito -->
-              <ul id="carrito" class="list-group"></ul>
-              <hr>
-              <!-- Precio total -->
-              <p class="text-right">Total: <span id="total"></span>&euro;</p>
-              <button id="boton-vaciar" class="btn btn-danger button">Vaciar</button>
-              <button id="boton-comprar" class="btn btn-danger button">Comprar</button>
-            </aside>
+      </div>
+      <div class="item-carte">
+        <div class="contenedor">
+          <div class="card card0">
+            <div class="border">
+              <h2>El hombre del norte</h2>
+            </div>
+            <div class="sinopsis ocult">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
+                expedita similique hic ullam quisquam, reprehenderit natus doloremque
+                ratione nam porro error. Qui.
+              </p>
+            </div>
+          </div>
+          <div class="card card1">
+            <div class="border">
+              <h2>Dog un viaje <br>
+                salvaje</h2>
+              <div class="sinopsis ocult">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                  beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
+                  expedita similique hic ullam quisquam, reprehenderit natus doloremque
+                  ratione nam porro error. Qui.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card card2">
+            <div class="border">
+              <h2>Doctor <br> stranger</h2>
+              <div class="sinopsis ocult">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                  beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
+                  expedita similique hic ullam quisquam, reprehenderit natus doloremque
+                  ratione nam porro error. Qui.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card card3">
+            <div class="border">
+              <h2>Jurassic <br>
+                World</h2>
+              <div class="sinopsis ocult">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                  beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
+                  expedita similique hic ullam quisquam, reprehenderit natus doloremque
+                  ratione nam porro error. Qui.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
     </section>
+    <div class="container" id="Comprar">
+      <div class="row">
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items" class="col-sm-8 row"></main>
+        <!-- Carrito -->
+        <aside class="col-sm-4">
+          <h2>Carrito</h2>
+          <!-- Elementos del carrito -->
+          <ul id="carrito" class="list-group"></ul>
+          <hr>
+          <!-- Precio total -->
+          <p class="text-right">Total: <span id="total"></span>&euro;</p>
+          <button id="boton-vaciar" class="btn btn-danger button">Vaciar</button>
+          <button id="boton-comprar" class="btn btn-danger button">Comprar</button>
+        </aside>
+      </div>
+    </div>
     <section id="About">
       <h2>Sobre nosotros</h2>
       <div class="about-item1">

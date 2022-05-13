@@ -731,21 +731,12 @@ footer .socialIcons ul li i {
     border-bottom: 1px solid #444;
   }
 
-  /*   main {
-    picture img {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+  main .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .about-item1 p {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  } */
   footer .contact2 {
     width: 100%;
     font-size: 12px;
@@ -774,53 +765,174 @@ footer .socialIcons ul li i {
   padding: 1.25rem;
 }
 .main .cartelera {
-  display: flex;
-  flex-direction: column;
-  /* flex-wrap: wrap; */
-  justify-content: center;
+  /*   Estilo de las tarjetas */
 }
 .main .cartelera .item-carte {
-  flex: 1 1 100px;
+  display: flex;
 }
-.main #About {
+.main .cartelera .contenedor {
+  height: 100vh;
+  width: 100vw;
+  max-height: 800px;
+  max-width: 1280px;
+  min-height: 600px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.main .cartelera .border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.main .cartelera:hover {
+  border: 1px solid white;
+}
+.main .cartelera .card {
+  height: 379px;
+  width: 300px;
+  background: grey;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 70px 63px -60px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.main .cartelera .card0 {
+  background: url(../../assets/images/elhombre.jpg) center center no-repeat;
+  background-size: 300px;
+}
+.main .cartelera .card0:hover {
+  background: url("../../assets/images/elhombre.jpg") left center no-repeat;
+  background-size: 600px;
+}
+.main .cartelera .card0:hover h2 {
+  opacity: 1;
+}
+.main .cartelera .card0:hover .ocult {
+  opacity: 1;
+}
+.main .cartelera .card1 {
+  background: url("../../assets/images/dog.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.main .cartelera .card1:hover {
+  background: url("../../assets/images/dog.jpg") center center no-repeat;
+  background-size: 600px;
+}
+.main .cartelera .card1:hover h2 {
+  opacity: 1;
+}
+.main .cartelera .card1:hover .ocult {
+  opacity: 1;
+}
+.main .cartelera .card2 {
+  background: url("../../assets/images/doctor.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.main .cartelera .card2:hover {
+  background: url("../../assets/images/doctor.jpg") right center no-repeat;
+  background-size: 600px;
+}
+.main .cartelera .card2:hover h2 {
+  opacity: 1;
+}
+.main .cartelera .card2:hover .ocult {
+  opacity: 1;
+}
+.main .cartelera .card3 {
+  background: url("../../assets/images/jurassic.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.main .cartelera .card3:hover {
+  background: url("../../assets/images/jurassic.jpg") center center no-repeat;
+  background-size: 600px;
+}
+.main .cartelera .card3:hover h2 {
+  opacity: 1;
+}
+.main .cartelera .card3:hover .ocult {
+  opacity: 1;
+}
+.main .cartelera .sinopsis {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.main .cartelera .ocult {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.main .cartelera h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#About {
   display: flex;
   flex-direction: column;
 }
-.main #About picture img {
+
+#About picture img {
   width: 60%;
 }
-.main .about-item1 {
+
+.about-item1 {
   /*     display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem; */
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem; */
   flex: 1 1 100px;
 }
-.main .about-item1 picture {
+
+.about-item1 picture {
   width: 100%;
   margin: 0 auto;
   padding: 0;
 }
-.main .about-item1 picture img {
+
+.about-item1 picture img {
   width: 100%;
   margin: 0 auto;
   padding: 0;
 }
-.main .about-item2 {
+
+.about-item2 {
   /*     display: flex;
-  flex-direction: row-reverse;
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem; */
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem; */
   flex: 1 1 100px;
 }
-.main .about-item2 picture {
+
+.about-item2 picture {
   width: 100%;
   margin: 0 auto;
   padding: 0;
 }
-.main .about-item2 picture img {
+
+.about-item2 picture img {
   width: 100%;
   margin: 0 auto;
   padding: 0;
