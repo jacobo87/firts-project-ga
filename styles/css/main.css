@@ -349,7 +349,7 @@ html {
 }
 
 /* body {
-  padding: 1.25rem;
+  padding: 1.25rem; 
 } */
 picture {
   display: block;
@@ -763,14 +763,9 @@ footer .socialIcons ul li i {
 }
 .main section {
   padding: 1.25rem;
-}
-.main .cartelera {
   /*   Estilo de las tarjetas */
 }
-.main .cartelera .item-carte {
-  display: flex;
-}
-.main .cartelera .contenedor {
+.main section .contenedor {
   height: 100vh;
   width: 100vw;
   max-height: 800px;
@@ -782,7 +777,7 @@ footer .socialIcons ul li i {
   align-items: center;
   margin: 0 auto;
 }
-.main .cartelera .border {
+.main section .border {
   height: 369px;
   width: 290px;
   background: transparent;
@@ -790,10 +785,10 @@ footer .socialIcons ul li i {
   transition: border 1s;
   position: relative;
 }
-.main .cartelera:hover {
+.main section:hover {
   border: 1px solid white;
 }
-.main .cartelera .card {
+.main section .card {
   height: 379px;
   width: 300px;
   background: grey;
@@ -807,63 +802,63 @@ footer .socialIcons ul li i {
   align-items: center;
   position: relative;
 }
-.main .cartelera .card0 {
+.main section .card0 {
   background: url(../../assets/images/elhombre.jpg) center center no-repeat;
   background-size: 300px;
 }
-.main .cartelera .card0:hover {
+.main section .card0:hover {
   background: url("../../assets/images/elhombre.jpg") left center no-repeat;
   background-size: 600px;
 }
-.main .cartelera .card0:hover h2 {
+.main section .card0:hover h2 {
   opacity: 1;
 }
-.main .cartelera .card0:hover .ocult {
+.main section .card0:hover .ocult {
   opacity: 1;
 }
-.main .cartelera .card1 {
+.main section .card1 {
   background: url("../../assets/images/dog.jpg") center center no-repeat;
   background-size: 300px;
 }
-.main .cartelera .card1:hover {
+.main section .card1:hover {
   background: url("../../assets/images/dog.jpg") center center no-repeat;
   background-size: 600px;
 }
-.main .cartelera .card1:hover h2 {
+.main section .card1:hover h2 {
   opacity: 1;
 }
-.main .cartelera .card1:hover .ocult {
+.main section .card1:hover .ocult {
   opacity: 1;
 }
-.main .cartelera .card2 {
+.main section .card2 {
   background: url("../../assets/images/doctor.jpg") center center no-repeat;
   background-size: 300px;
 }
-.main .cartelera .card2:hover {
+.main section .card2:hover {
   background: url("../../assets/images/doctor.jpg") right center no-repeat;
   background-size: 600px;
 }
-.main .cartelera .card2:hover h2 {
+.main section .card2:hover h2 {
   opacity: 1;
 }
-.main .cartelera .card2:hover .ocult {
+.main section .card2:hover .ocult {
   opacity: 1;
 }
-.main .cartelera .card3 {
+.main section .card3 {
   background: url("../../assets/images/jurassic.jpg") center center no-repeat;
   background-size: 300px;
 }
-.main .cartelera .card3:hover {
+.main section .card3:hover {
   background: url("../../assets/images/jurassic.jpg") center center no-repeat;
   background-size: 600px;
 }
-.main .cartelera .card3:hover h2 {
+.main section .card3:hover h2 {
   opacity: 1;
 }
-.main .cartelera .card3:hover .ocult {
+.main section .card3:hover .ocult {
   opacity: 1;
 }
-.main .cartelera .sinopsis {
+.main section .sinopsis {
   position: absolute;
   fill: #fff;
   color: #fff;
@@ -875,11 +870,11 @@ footer .socialIcons ul li i {
   align-items: center;
   justify-content: space-around;
 }
-.main .cartelera .ocult {
+.main section .ocult {
   opacity: 0;
   transition: opacity 1s;
 }
-.main .cartelera h2 {
+.main section h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   margin: 20px;
