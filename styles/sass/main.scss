@@ -22,6 +22,17 @@
     padding: 1.25rem;
   }
 
+  .cartelera {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+
+    .item-carte {
+      flex: 1 1 100px;
+    }
+  }
+
   #About {
     display: flex;
     flex-direction: column;
@@ -32,11 +43,12 @@
   }
 
   .about-item1 {
-    display: flex;
+    /*     display: flex;
     flex-direction: row;
     width: 100%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem; */
+    flex: 1 1 100px;
   }
 
   .about-item1 picture {
@@ -52,11 +64,12 @@
   }
 
   .about-item2 {
-    display: flex;
+    /*     display: flex;
     flex-direction: row-reverse;
     width: 100%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem; */
+    flex: 1 1 100px;
   }
 
   .about-item2 picture {
@@ -124,7 +137,9 @@
   }
 
   a {
-    text-decoration: none;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
     color: white;
   }
 
@@ -134,5 +149,17 @@
 
   span {
     color: red;
+  }
+
+  /*   Scroll arriba */
+
+  #scrollToTopBtn {
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 48px;
+    width: 48px;
   }
 }

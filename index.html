@@ -19,7 +19,8 @@
   <header>
     <section class="top-nav">
       <div>
-        <h1>Proyecto GA | HTML&CSS</h1>
+        <h1>Cinema GA <br>
+          | Proyecto | HTML&CSS</h1>
       </div>
       <input id="menu-toggle" type="checkbox" />
       <label class='menu-button-container' for="menu-toggle">
@@ -27,66 +28,94 @@
       </label>
       <ul class="menu">
         <li class="button"><a href="#">Inicio</a></li>
-        <li class="button"><a href="#Contenido">Contenido</a></li>
+        <li class="button"><a href="#Contenido">Cartelera</a></li>
         <li class="button"><a href="#About">Sobre nosotros</a></li>
         <li class="button"><a href="#Contacto">Contacto</a></li>
       </ul>
     </section>
   </header>
   <div class="main">
-    <section>
-      <h2>Esto es una seccion</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-        beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-        expedita similique hic ullam quisquam, reprehenderit natus doloremque
-        ratione nam porro error. Qui.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-        autem, harum quisquam reiciendis numquam unde consequatur adipisci qui
-        aperiam laudantium dolorum quidem animi dolor? Quam doloremque beatae
-        nihil architecto nesciunt.
-      </p>
-      <picture>
-        <img src="#" alt="imagen">
-      </picture>
-    </section>
-    <section id="Contenido">
-      <h2>Esto es una seccion</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-        beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-        expedita similique hic ullam quisquam, reprehenderit natus doloremque
-        ratione nam porro error. Qui.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-        autem, harum quisquam reiciendis numquam unde consequatur adipisci qui
-        aperiam laudantium dolorum quidem animi dolor? Quam doloremque beatae
-        nihil architecto nesciunt.
-      </p>
-    </section>
-    <section id="About">
-      <h2>Sobre nosotros</h2>
-      <div class="about-item1">
-        <div>
+    <section class="cartelera" id="Contenido">
+      <div class="item-carte">
+        <h2>Cartelera</h2>
+        <picture>
+          <img src="https://www.cinesa.es/Manager/Peliculas/elhombredelnorte/cartelera.jpg" alt="el hombre del norte">
+        </picture>
+        <h3>Sinopsis</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
           beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
           expedita similique hic ullam quisquam, reprehenderit natus doloremque
           ratione nam porro error. Qui.
         </p>
-        </div>
-        <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, corrupti totam. Eum, labore vel voluptatum est
-          architecto alias beatae vero odio aliquid eveniet a quibusdam aut dignissimos cum, optio dolorum.
-        </p>
-        </div>
-        <div>
+        <hr>
         <picture>
-          <img src="./assets/images/real.jpg" alt="Ideas">
+          <img src="https://www.cinesa.es/Manager/Peliculas/dogunviajesalvaje/cartelera.jpg" alt="dog un viaje salvaje">
         </picture>
+        <h3>Sinopsis</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+          autem, harum quisquam reiciendis numquam unde consequatur adipisci qui
+          aperiam laudantium dolorum quidem animi dolor? Quam doloremque beatae
+          nihil architecto nesciunt.
+        </p>
+        <hr>
+        <picture>
+          <img src="https://www.cinesa.es/Manager/Peliculas/doctorstrangeenelmultiversodelalocura/cartelera.jpg"
+            alt="doctor strange en el multiverso de la locura">
+        </picture>
+        <h3>Sinopsis</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
+          expedita similique hic ullam quisquam, reprehenderit natus doloremque
+          ratione nam porro error. Qui.
+        </p>
+        <hr>
+        <picture>
+          <img src="https://www.cinesa.es/Manager/Peliculas/jurassicworlddominion/cartelera.jpg"
+            alt="jurassic world dominion">
+        </picture>
+        <h3>Sinopsis</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+          autem, harum quisquam reiciendis numquam unde consequatur adipisci qui
+          aperiam laudantium dolorum quidem animi dolor? Quam doloremque beatae
+          nihil architecto nesciunt.
+        </p>
+        <hr>
+        <div>
+          <form action="#">
+            <label for="entradas">Números de entradas (máx 10):</label>
+            <input type="number" id="entradas" name="entradas" min="1" max="10">
+            <div>
+              <button class="button">Añadir entrada/as</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="About">
+      <h2>Sobre nosotros</h2>
+      <div class="about-item1">
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
+            expedita similique hic ullam quisquam, reprehenderit natus doloremque
+            ratione nam porro error. Qui.
+          </p>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, corrupti totam. Eum, labore vel voluptatum
+            est
+            architecto alias beatae vero odio aliquid eveniet a quibusdam aut dignissimos cum, optio dolorum.
+          </p>
+        </div>
+        <div>
+          <picture>
+            <img src="./assets/images/real.jpg" alt="Ideas">
+          </picture>
         </div>
       </div>
       <div class="about-item2">
@@ -106,6 +135,9 @@
       </div>
     </section>
   </div>
+  <div class="subir">
+    <button class="button" id="scrollArribaBtn">☝️</button>
+  </div>
   <footer id="Contacto">
     <div class="contact tittle">
       <h2>Contacto</h2>
@@ -113,7 +145,7 @@
         <ul>
           <li>
             <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:contact@contact.com">contact@contact.com</a>
+            <a href="mailto:contact@contact.com">contact@realcinema.com</a>
           </li>
           <li>
             <i class="fa-solid fa-square-phone"></i> Teléfono: +34 666 666 666

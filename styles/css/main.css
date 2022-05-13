@@ -6,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -344,7 +345,7 @@ template {
 
 html {
   font-size: 100%;
-  font-family: sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /* body {
@@ -590,7 +591,9 @@ footer .tittle h2 {
   font-weight: 900;
 }
 footer a {
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
   color: black;
 }
 footer a:hover {
@@ -677,7 +680,7 @@ footer .socialIcons ul li i {
 }
 
 /* Desktop */
-/* @media only screen and (min-width: 901) {
+/* @media only screen and (min-width: 901) and (max-width: 2048px) {
 } */
 /* Tablet y Móvil */
 @media only screen and (min-width: 321px) and (max-width: 900px) {
@@ -728,30 +731,32 @@ footer .socialIcons ul li i {
     border-bottom: 1px solid #444;
   }
 
-  main picture img {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  main .about-item1 p {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-footer .contact2 {
-  width: 100%;
-  font-size: 12px;
-}
-footer .contact2 ul {
-  padding: 0;
-}
-footer .contact3 textarea {
-  width: 100%;
-}
+  /*   main {
+    picture img {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
+    .about-item1 p {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  } */
+  footer .contact2 {
+    width: 100%;
+    font-size: 12px;
+  }
+  footer .contact2 ul {
+    padding: 0;
+  }
+  footer .contact3 textarea {
+    width: 100%;
+  }
+}
 :root {
   --HeaderBg: #ff013c;
   --menuBg: #757272;
@@ -768,6 +773,15 @@ footer .contact3 textarea {
 .main section {
   padding: 1.25rem;
 }
+.main .cartelera {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+.main .cartelera .item-carte {
+  flex: 1 1 100px;
+}
 .main #About {
   display: flex;
   flex-direction: column;
@@ -776,11 +790,12 @@ footer .contact3 textarea {
   width: 60%;
 }
 .main .about-item1 {
-  display: flex;
+  /*     display: flex;
   flex-direction: row;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem; */
+  flex: 1 1 100px;
 }
 .main .about-item1 picture {
   width: 100%;
@@ -793,11 +808,12 @@ footer .contact3 textarea {
   padding: 0;
 }
 .main .about-item2 {
-  display: flex;
+  /*     display: flex;
   flex-direction: row-reverse;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem; */
+  flex: 1 1 100px;
 }
 .main .about-item2 picture {
   width: 100%;
@@ -855,12 +871,15 @@ footer .contact3 textarea {
   justify-content: left;
   background-color: black;
   color: white;
+  /*   Scroll arriba */
 }
 .azmani p {
   margin: 1.25rem;
 }
 .azmani a {
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
   color: white;
 }
 .azmani a:hover {
@@ -868,6 +887,15 @@ footer .contact3 textarea {
 }
 .azmani span {
   color: red;
+}
+.azmani #scrollToTopBtn {
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 48px;
+  width: 48px;
 }
 
 /*# sourceMappingURL=main.css.map */

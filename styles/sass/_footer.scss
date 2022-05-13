@@ -18,7 +18,9 @@ footer {
   }
 
   a {
-    text-decoration: none;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
     color: black;
   }
 
