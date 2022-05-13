@@ -767,7 +767,7 @@ footer .socialIcons ul li i {
 }
 .main section .contenedor {
   height: 100vh;
-  width: 100vw;
+  width: 75vw;
   max-height: 800px;
   max-width: 1280px;
   min-height: 600px;
@@ -816,6 +816,13 @@ footer .socialIcons ul li i {
 .main section .card0:hover .ocult {
   opacity: 1;
 }
+.main section .card0 h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
 .main section .card1 {
   background: url("../../assets/images/dog.jpg") center center no-repeat;
   background-size: 300px;
@@ -829,6 +836,13 @@ footer .socialIcons ul li i {
 }
 .main section .card1:hover .ocult {
   opacity: 1;
+}
+.main section .card1 h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
 }
 .main section .card2 {
   background: url("../../assets/images/doctor.jpg") center center no-repeat;
@@ -844,6 +858,13 @@ footer .socialIcons ul li i {
 .main section .card2:hover .ocult {
   opacity: 1;
 }
+.main section .card2 h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
 .main section .card3 {
   background: url("../../assets/images/jurassic.jpg") center center no-repeat;
   background-size: 300px;
@@ -858,6 +879,13 @@ footer .socialIcons ul li i {
 .main section .card3:hover .ocult {
   opacity: 1;
 }
+.main section .card3 h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
 .main section .sinopsis {
   position: absolute;
   fill: #fff;
@@ -871,13 +899,6 @@ footer .socialIcons ul li i {
   justify-content: space-around;
 }
 .main section .ocult {
-  opacity: 0;
-  transition: opacity 1s;
-}
-.main section h2 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  margin: 20px;
   opacity: 0;
   transition: opacity 1s;
 }
