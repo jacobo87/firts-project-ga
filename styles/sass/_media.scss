@@ -1,5 +1,5 @@
 /* Desktop */
-/* @media only screen and (min-width: 901) and (max-width: 2048px) {
+/* @media only screen and (min-width: 900) and (max-width: 2048px) {
 } */
 
 /* Tablet y Móvil */
@@ -54,10 +54,11 @@
   }
 
   main {
-    .contenedor {
+    .contenedor-movil {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      max-width: 900px;
+      min-width: 400px;
     }
   }
 

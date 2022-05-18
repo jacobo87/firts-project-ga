@@ -680,7 +680,7 @@ footer .socialIcons ul li i {
 }
 
 /* Desktop */
-/* @media only screen and (min-width: 901) and (max-width: 2048px) {
+/* @media only screen and (min-width: 900) and (max-width: 2048px) {
 } */
 /* Tablet y Móvil */
 @media only screen and (min-width: 321px) and (max-width: 900px) {
@@ -731,10 +731,11 @@ footer .socialIcons ul li i {
     border-bottom: 1px solid #444;
   }
 
-  main .contenedor {
+  main .contenedor-movil {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    max-width: 900px;
+    min-width: 400px;
   }
 
   footer .contact2 {
@@ -764,6 +765,18 @@ footer .socialIcons ul li i {
 .main section {
   padding: 1.25rem;
   /*   Estilo de las tarjetas */
+  /*    .contenedor {
+    height: 100vh;
+    width: 75vw;
+    max-height: 800px;
+    max-width: 900px;
+    min-height: 600px;
+    min-width: 321px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  } */
 }
 .main section .contenedor {
   height: 100vh;
@@ -901,6 +914,24 @@ footer .socialIcons ul li i {
 .main section .ocult {
   opacity: 0;
   transition: opacity 1s;
+}
+.main #Comprar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.main #Comprar #items {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.main #Comprar aside {
+  display: flex;
+  width: 100%;
+  border: #000000 1px solid;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
 #About {

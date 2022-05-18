@@ -13,6 +13,9 @@
   <title>Proyecto GA | Jacobo Azmani</title>
   <link rel="stylesheet" href="./styles/css/main.css" />
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js"
+    integrity="sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -39,80 +42,64 @@
       <div>
         <h2>Cartelera</h2>
       </div>
-        <div class="contenedor">
-          <div class="card card0">
-            <div class="border">
-              <h2>El hombre del norte</h2>
-            </div>
-            <div class="sinopsis ocult">
+      <div class="contenedor contenedor-movil">
+        <div class="card card0">
+          <div class="border">
+            <h2>El hombre del norte</h2>
+          </div>
+          <!--             <div class="sinopsis ocult">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
                 beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
                 expedita similique hic ullam quisquam, reprehenderit natus doloremque
                 ratione nam porro error. Qui.
-              </p>
-            </div>
-          </div>
-          <div class="card card1">
-            <div class="border">
-              <h2>Dog un viaje <br>
-                salvaje</h2>
-              <div class="sinopsis ocult">
+              </p> 
+            </div>-->
+        </div>
+        <div class="card card1">
+          <div class="border">
+            <h2>Dog un viaje <br>
+              salvaje</h2>
+            <!--               <div class="sinopsis ocult">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
                   beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
                   expedita similique hic ullam quisquam, reprehenderit natus doloremque
                   ratione nam porro error. Qui.
                 </p>
-              </div>
-            </div>
+              </div> -->
           </div>
-          <div class="card card2">
-            <div class="border">
-              <h2>Doctor <br> stranger</h2>
-              <div class="sinopsis ocult">
+        </div>
+        <div class="card card2">
+          <div class="border">
+            <h2>Doctor <br> stranger</h2>
+            <!--               <div class="sinopsis ocult">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
                   beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
                   expedita similique hic ullam quisquam, reprehenderit natus doloremque
                   ratione nam porro error. Qui.
                 </p>
-              </div>
-            </div>
+              </div> -->
           </div>
-          <div class="card card3">
-            <div class="border">
-              <h2>Jurassic <br>
-                World</h2>
-              <div class="sinopsis ocult">
+        </div>
+        <div class="card card3">
+          <div class="border">
+            <h2>Jurassic <br>
+              World</h2>
+            <!--               <div class="sinopsis ocult">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
                   beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
                   expedita similique hic ullam quisquam, reprehenderit natus doloremque
                   ratione nam porro error. Qui.
                 </p>
-              </div>
-            </div>
+              </div> -->
           </div>
-        </div>     
-    </section>
-    <div class="container" id="Comprar">
-      <div class="row">
-        <!-- Elementos generados a partir del JSON -->
-        <main id="items" class="col-sm-8 row"></main>
-        <!-- Carrito -->
-        <aside class="col-sm-4">
-          <h2>Carrito</h2>
-          <!-- Elementos del carrito -->
-          <ul id="carrito" class="list-group"></ul>
-          <hr>
-          <!-- Precio total -->
-          <p class="text-right">Total: <span id="total"></span>&euro;</p>
-          <button id="boton-vaciar" class="btn btn-danger button">Vaciar</button>
-          <button id="boton-comprar" class="btn btn-danger button">Comprar</button>
-        </aside>
+        </div>
       </div>
-    </div>
+    </section>
+
     <section id="About">
       <h2>Sobre nosotros</h2>
       <div class="about-item1">
@@ -152,6 +139,27 @@
         </picture>
       </div>
     </section>
+
+    <div>
+      <h2>Compre sus entradas</h2>
+    </div>
+    <div id="Comprar">
+      <div>
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items"></main>
+        <!-- Carrito -->
+        <aside>
+          <h2>Carrito</h2>
+          <!-- Elementos del carrito -->
+          <ul id="carrito"></ul>
+          <hr>
+          <!-- Precio total -->
+          <p>Total: <span id="total"></span>&euro;</p>
+        </aside>
+        <button id="boton-vaciar" class="btn btn-danger button">Vaciar</button>
+        <button id="boton-comprar" class="btn btn-danger button">Comprar</button>
+      </div>
+    </div>
   </div>
   <div class="subir">
     <button class="button" id="scrollArribaBtn">☝️</button>

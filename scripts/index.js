@@ -18,7 +18,7 @@ scrollArribaBtn.addEventListener('click', scrollArriba);
 
 // ============== Final de botón arriba ==============
 
-// Cesta entradas
+// ============== Cesta entradas ==============
 // Variables
 const baseDeDatos = [
   {
@@ -55,7 +55,7 @@ const DOMtotal = document.querySelector('#total');
 const DOMbotonVaciar = document.querySelector('#boton-vaciar');
 const DOMbotonComprar = document.querySelector('#boton-comprar');
 
-// Funciones
+// ============== Funciones ==============
 
 /**
  * Dibuja todos los productos a partir de la base de datos.
@@ -64,7 +64,7 @@ function renderizarProductos() {
   baseDeDatos.forEach((info) => {
     // Estructura
     const miNodo = document.createElement('div');
-    miNodo.classList.add('card', 'col-sm-4');
+    miNodo.classList.add('card');
     // Body
     const miNodoCardBody = document.createElement('div');
     miNodoCardBody.classList.add('card-body');
@@ -176,9 +176,7 @@ function calcularTotal() {
     .toFixed(2);
 }
 
-/**
- * Varia el carrito y vuelve a dibujarlo
- */
+/* Varia el carrito y vuelve a dibujarlo */
 function vaciarCarrito() {
   // Limpiamos los productos guardados
   carrito = [];
