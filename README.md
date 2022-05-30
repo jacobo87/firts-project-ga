@@ -5,4 +5,4 @@
 
 # Proyecto
 
-![](./assets/images/Screenshot%202022-05-20%20at%2012-16-45%20Proyecto%20GA%20Jacobo%20Azmani.png)
+![](./assets/images/caratula.png)
