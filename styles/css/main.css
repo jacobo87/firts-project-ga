@@ -339,6 +339,12 @@ template {
   display: none;
 }
 
+:root {
+  --HeaderBg: #ff013c;
+  --menuBg: #000000;
+  --space-base: 1.25rem;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -348,9 +354,25 @@ html {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-/* body {
-  padding: 1.25rem; 
-} */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+section {
+  background-image: url(../../assets/images/movie-bg.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* padding: 1.25rem; */
+}
+
 picture {
   display: block;
 }
@@ -364,6 +386,7 @@ img {
 :root {
   --HeaderBg: #ff013c;
   --menuBg: #000000;
+  --space-base: 1.25rem;
 }
 
 header {
@@ -468,6 +491,7 @@ header .top-nav {
   color: var(--menuBg);
   height: 50px;
   padding: 1em;
+  width: 100%;
 }
 header .menu {
   display: flex;
@@ -680,10 +704,15 @@ footer .socialIcons ul li i {
 }
 
 /* Desktop */
-/* @media only screen and (min-width: 900) and (max-width: 2048px) {
+/* @media only screen and (min-width: 901) and (max-width: 2048px) {
+  body main section div {
+    .mobile {
+      display: none;
+    }
+  }
 } */
 /* Tablet y Móvil */
-@media only screen and (min-width: 321px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 900px) {
   header {
     display: flex;
     flex-direction: column;
@@ -691,6 +720,9 @@ footer .socialIcons ul li i {
   header h1 {
     width: 90%;
     margin: 0 auto;
+  }
+  header .logo-header {
+    display: none;
   }
   header .menu-button-container {
     display: flex;
@@ -731,11 +763,19 @@ footer .socialIcons ul li i {
     border-bottom: 1px solid #444;
   }
 
-  main .contenedor-movil {
+  body main .cartelera .contenedor {
+    display: none;
+  }
+
+  .mobile {
     display: flex;
     flex-direction: column;
-    max-width: 900px;
-    min-width: 400px;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .mobile .card-cartel {
+    justify-content: right;
   }
 
   footer .contact2 {
@@ -749,9 +789,24 @@ footer .socialIcons ul li i {
     width: 100%;
   }
 }
+section.form-login {
+  /* border: 2px black solid; */
+  height: 75vh;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /*   form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.25rem;
+  } */
+}
+
 :root {
   --HeaderBg: #ff013c;
-  --menuBg: #757272;
+  --menuBg: #000000;
+  --space-base: 1.25rem;
 }
 
 .main {
@@ -761,38 +816,38 @@ footer .socialIcons ul li i {
 }
 .main h2 {
   text-align: center;
+  font-size: 3.5rem;
+}
+.main .logo-main {
+  font-weight: 900;
+  background-color: #000000;
+  color: white;
 }
 .main section {
   padding: 1.25rem;
   /*   Estilo de las tarjetas */
-  /*    .contenedor {
-    height: 100vh;
-    width: 75vw;
-    max-height: 800px;
-    max-width: 900px;
-    min-height: 600px;
-    min-width: 321px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-  } */
 }
 .main section .contenedor {
   height: 100vh;
   width: 75vw;
-  max-height: 800px;
-  max-width: 1280px;
-  min-height: 600px;
-  min-width: 1000px;
+  /* max-height: 800px; */
+  max-height: 40rem;
+  /* max-width: 1280px; */
+  max-width: 75rem;
+  /* min-height: 600px; */
+  min-height: 37rem;
+  /* min-width: 1000px; */
+  min-width: 60rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
 }
 .main section .border {
-  height: 369px;
-  width: 290px;
+  /* height: 369px; */
+  height: 22rem;
+  /* width: 290px; */
+  width: 18rem;
   background: transparent;
   border-radius: 10px;
   transition: border 1s;
@@ -802,8 +857,10 @@ footer .socialIcons ul li i {
   border: 1px solid white;
 }
 .main section .card {
-  height: 379px;
-  width: 300px;
+  /* height: 379px; */
+  height: 23rem;
+  /* width: 300px; */
+  width: 18rem;
   background: grey;
   border-radius: 10px;
   transition: background 0.8s;
@@ -862,7 +919,7 @@ footer .socialIcons ul li i {
   background-size: 300px;
 }
 .main section .card2:hover {
-  background: url("../../assets/images/doctor.jpg") right center no-repeat;
+  background: url("../../assets/images/doctor.jpg") center bottom no-repeat;
   background-size: 600px;
 }
 .main section .card2:hover h2 {

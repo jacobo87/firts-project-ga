@@ -21,9 +21,10 @@
 <body>
   <header>
     <section class="top-nav">
-      <div>
-        <h1>Cinema GA <br>
-          | Proyecto | HTML&CSS</h1>
+      <div class="logo-header">
+        <a href="./index.html">
+          <h1>Eh Voilà! Cinema</h1>
+        </a>
       </div>
       <input id="menu-toggle" type="checkbox" />
       <label class='menu-button-container' for="menu-toggle">
@@ -31,145 +32,133 @@
       </label>
       <ul class="menu">
         <li class="button"><a href="#Contenido">Cartelera</a></li>
-        <li class="button"><a href="#Comprar">Comprar</a></li>
-        <li class="button"><a href="#About">Sobre nosotros</a></li>
+        <li class="button"><a href="./compra.html">Comprar</a></li>
+        <li class="button"><a href="./about.html">Sobre nosotros</a></li>
         <li class="button"><a href="#Contacto">Contacto</a></li>
+      </ul>
+      <p>Acceso Usuarios</p>
+      <ul class="login">
+        <li><a href="./login.html" class="button">Login</a> </li>
       </ul>
     </section>
   </header>
-  <div class="main">
-    <section class="cartelera" id="Contenido">
-      <div>
-        <h2>Cartelera</h2>
-      </div>
-      <div class="contenedor contenedor-movil">
-        <div class="card card0">
-          <div class="border">
-            <h2>El hombre del norte</h2>
+  <main>
+    <div class="main">
+      <section class="cartelera" id="Contenido">
+        <div class="logo-main">
+          <h2>Eh Voilà! Cinema</h2>
+        </div>
+        <div class="contenedor">
+          <div class="card card0">
+            <div class="border">
+              <h2>El hombre del norte</h2>
+            </div>
+            <!--             <div class="sinopsis ocult">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
+                expedita similique hic ullam quisquam, reprehenderit natus doloremque
+                ratione nam porro error. Qui.
+              </p> 
+            </div>-->
+          </div>
+          <div class="card card1">
+            <div class="border">
+              <h2>Dog un viaje <br>
+                salvaje</h2>
+              <!--               <div class="sinopsis ocult">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                  beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
+                  expedita similique hic ullam quisquam, reprehenderit natus doloremque
+                  ratione nam porro error. Qui.
+                </p>
+              </div> -->
+            </div>
+          </div>
+          <div class="card card2">
+            <div class="border">
+              <h2>Doctor <br> stranger</h2>
+              <!--               <div class="sinopsis ocult">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                  beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
+                  expedita similique hic ullam quisquam, reprehenderit natus doloremque
+                  ratione nam porro error. Qui.
+                </p>
+              </div> -->
+            </div>
+          </div>
+          <div class="card card3">
+            <div class="border">
+              <h2>Jurassic <br>
+                World</h2>
+              <!--               <div class="sinopsis ocult">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                  beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
+                  expedita similique hic ullam quisquam, reprehenderit natus doloremque
+                  ratione nam porro error. Qui.
+                </p>
+              </div> -->
+            </div>
           </div>
         </div>
-        <div class="card card1">
-          <div class="border">
-            <h2>Dog un viaje <br>
-              salvaje</h2>
+        <div class="mobile">
+          <div class="logo-main">
+          <h2>Cartelera</h2>
           </div>
-        </div>
-        <div class="card card2">
-          <div class="border">
-            <h2>Doctor <br> stranger</h2>
+          <div class="card-cartel">
+            <picture>
+              <img src="./assets/images/elhombre.jpg" alt="Hombre">
+            </picture>
+            <div>
+              <h4>Sinopsis</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore alias enim placeat? Cupiditate, ullam
+                nihil hic consequuntur quasi ipsa reprehenderit placeat delectus nisi veniam perferendis beatae, fugit
+                voluptates doloremque id.</p>
+            </div>
           </div>
-        </div>
-        <div class="card card3">
-          <div class="border">
-            <h2>Jurassic <br>
-              World</h2>
+          <div class="card-cartel">
+            <picture>
+              <img src="./assets/images/dog.jpg" alt="dog">
+            </picture>
+                        <div>
+              <h4>Sinopsis</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore alias enim placeat? Cupiditate, ullam
+                nihil hic consequuntur quasi ipsa reprehenderit placeat delectus nisi veniam perferendis beatae, fugit
+                voluptates doloremque id.</p>
+            </div>
           </div>
+          <div class="card-cartel">
+            <picture>
+              <img src="./assets/images/doctor.jpg" alt="doctor">
+            </picture>
+                        <div>
+              <h4>Sinopsis</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore alias enim placeat? Cupiditate, ullam
+                nihil hic consequuntur quasi ipsa reprehenderit placeat delectus nisi veniam perferendis beatae, fugit
+                voluptates doloremque id.</p>
+            </div>
+          </div>
+          <div class="card-cartel">
+            <picture>
+              <img src="./assets/images/jurassic.jpg" alt="Jurassic">
+            </picture>
+                        <div>
+              <h4>Sinopsis</h4>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore alias enim placeat? Cupiditate, ullam
+                nihil hic consequuntur quasi ipsa reprehenderit placeat delectus nisi veniam perferendis beatae, fugit
+                voluptates doloremque id.</p>
+            </div>
+          </div>
+
         </div>
-      </div>
-      <div>
-        <h3>Sinopsis</h3>
-        <h4>El hombre del norte</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
+      </section>
 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
-        </p>
-      </div>
-      <div>
-        <h4>Dog un viaje salvaje</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
-        </p>
-      </div>
-      <div>
-        <h4>Doctor <br> stranger</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
-        </p>
-      </div>
-      <div>
-        <h4>Jurassic World</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          beatae aperiam excepturi alias eius voluptatem, vero necessitatibus,
-          expedita similique hic ullam quisquam, reprehenderit natus doloremque
-          ratione nam porro error. Qui.
-        </p>
-      </div>
-    </section>
-
-    <section id="About">
+      <!--     <section id="About">
       <h2>Sobre nosotros</h2>
       <div class="about-item1">
         <div>
@@ -207,32 +196,34 @@
           <img src="./assets/images/US.jpg" alt="Nosotros">
         </picture>
       </div>
-    </section>
+    </section> -->
 
-    <div>
+      <!--     <div>
       <h2>Compre sus entradas</h2>
     </div>
     <div id="Comprar">
       <div>
-        <!-- Elementos generados a partir del JSON -->
+        Elementos generados a partir del JSON 
         <main id="items"></main>
-        <!-- Carrito -->
+       Carrito 
         <aside>
           <h2>Carrito</h2>
-          <!-- Elementos del carrito -->
+         Elementos del carrito 
           <ul id="carrito"></ul>
           <hr>
-          <!-- Precio total -->
+           Precio total
           <p>Total: <span id="total"></span>&euro;</p>
         </aside>
         <button id="boton-vaciar" class="btn btn-danger button">Vaciar</button>
         <button id="boton-comprar" class="btn btn-danger button">Comprar</button>
       </div>
     </div>
-  </div>
-  <div class="subir">
-    <button class="button" id="scrollArribaBtn">☝️</button>
-  </div>
+  </div> -->
+      <div class="subir">
+        <button class="button" id="scrollArribaBtn">☝️</button>
+      </div>
+    </div>
+  </main>
   <footer id="Contacto">
     <div class="contact tittle">
       <h2>Contacto</h2>
@@ -281,7 +272,6 @@
         <li><a href="#"><i class="fa-brands fa-twitter"></a></i></li>
         <li><a href="#"><i class="fa-brands fa-facebook"></a></i></li>
         <li><a href="#"><i class="fa-brands fa-instagram"></a></i></li>
-        <li><a href="#"><i class="fa-brands fa-twitch"></a></i></li>
       </ul>
     </div>
   </footer>

@@ -1,6 +1,7 @@
 :root {
   --HeaderBg: #ff013c;
   --menuBg: #000000;
+  --space-base: 1.25rem;
 }
 
 header {
@@ -127,6 +128,7 @@ header {
     color: var(--menuBg);
     height: 50px;
     padding: 1em;
+    width: 100%;
   }
 
   .menu {

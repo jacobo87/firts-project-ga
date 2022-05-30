@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Fin font-awesome -->
+  <title>Proyecto GA | Jacobo Azmani</title>
+  <link rel="stylesheet" href="./styles/css/main.css" />
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js"
+    integrity="sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <header>
+    <section class="top-nav">
+      <div class="logo-header">
+        <a href="./index.html">
+          <h1>Eh Voilà! Cinema</h1>
+        </a>
+      </div>
+      <!--         <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li class="button"><a href="./index.html">Cartelera</a></li>
+          <li class="button"><a href="./compra.html">Comprar</a></li>
+          <li class="button"><a href="./about.html">Sobre nosotros</a></li>
+          <li class="button"><a href="#Contacto">Contacto</a></li>
+        </ul> -->
+      <p>Cerrar sesión</p>
+      <ul class="login">
+        <li><a href="./index.html" class="button">Salir</a></li>
+      </ul>
+    </section>
+  </header>
+  <div class="main">
+    <section class="form-login">
+      <form name="form" action="./index.html">
+        <p>Usuario: <input class="input" type="text" name="login" /></p>
+        <p>
+          Contraseña: <input class="input" type="password" name="password" />
+          <input class="button" onclick="go()" type="button" value="Acceder" />
+        </p>
+      </form>
+    </section>
+    <div class="subir">
+      <button class="button" id="scrollArribaBtn">☝️</button>
+    </div>
+    </section>
+  </div>
+  <footer id="Contacto">
+    <div class="contact tittle">
+      <h2>Contacto</h2>
+      <div class="contact contact2">
+        <ul>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:contact@contact.com">contact@realcinema.com</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-square-phone"></i> Teléfono: +34 666 666 666
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <a href="https://en.wikipedia.org/wiki/Ja%C3%A9n,_Spain">Jaén</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="contact contact3">
+      <ul>
+        <li>
+          <div>
+            <div>
+              <legend>Comentarios</legend>
+            </div>
+            <form action="https://formspree.io/f/xnqwgrea" method="post" id:="email">
+              <div class="email">
+                <label for="email"></label>
+                <input placeholder="Email" type="text" class="input" required="" />
+              </div>
+              <div>
+                <textarea name="comment" id="comment" cols="25" rows="2" placeholder="Escriba aquí su comentario... "
+                  class="input"></textarea>
+              </div>
+              <div>
+                <button type="submit" class="button">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="socialIcons">
+      <ul>
+        <li><a href="#"><i class="fa-brands fa-twitter"></a></i></li>
+        <li><a href="#"><i class="fa-brands fa-facebook"></a></i></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></a></i></li>
+        <li><a href="#"><i class="fa-brands fa-twitch"></a></i></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="azmani">
+    <p>
+      Made with love <span type="img">&#10084;</span> by
+      <a href="https://github.com/jacobo87" target="_blank">Jacobo Azmani</a>
+      2022.
+    </p>
+  </div>
+  <script src="./scripts/login.js"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

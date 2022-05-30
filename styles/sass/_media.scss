@@ -1,9 +1,14 @@
 /* Desktop */
-/* @media only screen and (min-width: 900) and (max-width: 2048px) {
+/* @media only screen and (min-width: 901) and (max-width: 2048px) {
+  body main section div {
+    .mobile {
+      display: none;
+    }
+  }
 } */
 
 /* Tablet y Móvil */
-@media only screen and (min-width: 321px) and (max-width: 900px) {
+@media only screen and (min-width: 200px) and (max-width: 900px) {
   header {
     display: flex;
     flex-direction: column;
@@ -11,6 +16,10 @@
     h1 {
       width: 90%;
       margin: 0 auto;
+    }
+
+    .logo-header {
+      display: none;
     }
 
     .menu-button-container {
@@ -53,12 +62,23 @@
     }
   }
 
-  main {
-    .contenedor-movil {
-      display: flex;
-      flex-direction: column;
-      max-width: 900px;
-      min-width: 400px;
+  body main {
+    .cartelera {
+      .contenedor {
+        display: none;
+      }
+    }
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+
+    .card-cartel {
+      justify-content: right;
     }
   }
 

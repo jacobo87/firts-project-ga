@@ -67,23 +67,23 @@ function renderizarProductos() {
     miNodo.classList.add('card');
     // Body
     const miNodoCardBody = document.createElement('div');
-    /* miNodoCardBody.classList.add('card-body'); */
+    miNodoCardBody.classList.add('card-body');
     // Titulo
     const miNodoTitle = document.createElement('h5');
-    /*  miNodoTitle.classList.add('card-title'); */
+    miNodoTitle.classList.add('card-title');
     miNodoTitle.textContent = info.nombre;
     // Imagen
     const miNodoImagen = document.createElement('img');
-    /* miNodoImagen.classList.add('img-fluid'); */
+    miNodoImagen.classList.add('img-fluid');
     miNodoImagen.setAttribute('src', info.imagen);
     // Precio
     const miNodoPrecio = document.createElement('p');
-    /* miNodoPrecio.classList.add('card-text'); */
+    miNodoPrecio.classList.add('card-text');
     miNodoPrecio.textContent = `${info.precio}${divisa}`;
     // Boton
     const miNodoBoton = document.createElement('button');
     miNodoBoton.classList.add('btn', 'btn-primary', 'button');
-    miNodoBoton.textContent = 'Añadir';
+    miNodoBoton.textContent = '+';
     miNodoBoton.setAttribute('marcador', info.id);
     miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
     // Insertamos
@@ -133,7 +133,7 @@ function renderizarCarrito() {
     // Boton de borrar
     const miBoton = document.createElement('button');
     miBoton.classList.add('btn', 'btn-danger', 'mx-5', 'button');
-    miBoton.textContent = 'Quitar';
+    miBoton.textContent = 'X';
     miBoton.style.marginLeft = '1rem';
     miBoton.dataset.item = item;
     miBoton.addEventListener('click', borrarItemCarrito);
